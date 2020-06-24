@@ -14,7 +14,7 @@
     "route": "node auto/route.js"
   },
   "dependencies": {
-    "axios": "0.17.1",
+    "axios": "0.19.2",
     "bluebird": "^3.5.0",
     "js-md5": "^0.7.3",
     "js-sha1": "^0.6.0",
