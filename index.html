@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>全新逍客,引领未来</title>
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="https://nissanxk.aiitec.net/h5-nissan/static/picker/base.css">
+  <link rel="stylesheet" href="https://nissanxk.aiitec.net/h5-nissan/static/layui.layim-v3.7.3/src/css/layui.css">
+  <link rel="stylesheet" href="https://nissanxk.aiitec.net/h5-nissan/static/layui.layim-v3.7.3/src/css/layui.mobile.css">
+  <style>
+
+
+  </style>
+  <!-- <script src="https://api.map.baidu.com/api?v=3.0&ak=I5S02UQuKzZQF4a8ryv0LXPpTZ5UIEi3"></script> -->
+  <script>
+    //这段可以防止ios在微信端返回的空白页
+    window.addEventListener('pageshow', function (e) {
+      if (e.persisted) {
+        window.location.reload()
+      }
+    })
+    try {
+      window.localStorage.foobar = "foobar";
+    } catch (_) {
+      window.is_storage = 0;
+      alert("本地储存写入错误，若为safari浏览器请关闭无痕模式浏览。");
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <div id="app">
+    <div i="base-loading"></div>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

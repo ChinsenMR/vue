@@ -1,0 +1,13 @@
+@import "./common/tool.scss";
+@import "./common/base.scss";
+[page="index"] {
+  .act-btn {
+    position: fixed;
+    left: 50%;
+    background: #fff;;
+    bottom: r(100px);
+    margin-left: r(-150px);
+    width: r(300px);
+    height: r(120px);
+  }
+}

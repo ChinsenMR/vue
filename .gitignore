@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+/.idea
+/.svn
+/.idea/workspace.xml
+.config.js

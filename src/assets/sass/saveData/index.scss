@@ -1,0 +1,135 @@
+@import "../common/tool.scss";
+@import "../common/base.scss";
+[page="info"] {
+  height: 100%;
+
+  .img-cover {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: r(280px);
+    background: url(/static/picture/plane.png) center center / cover no-repeat;
+    // border-radius: 0 0 r(50px) r(50px);
+  }
+  .content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    .filter {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .text {
+      padding: r(30px);
+      position: relative;
+      z-index: 1001;
+      // top: r(300px);
+      border-radius: r(15px);
+      max-width: r(670px);
+      overflow: scroll;
+      // left: 50%;
+      margin: r(200px) auto;
+      // margin-left: r(-335px);
+      background: #fff;
+      // z-index:
+      height: r(670px);
+      .view {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .main {
+    position: relative;
+
+    width: 100%;
+    top: r(226px);
+    padding-bottom: r(50px);
+    overflow: scroll;
+    .form-wrap {
+      padding: 0 r(39px);
+      -webkit-overflow-scrolling: touch;
+      margin: 0 auto;
+      width: r(670px);
+      border-radius: r(10px);
+      background: #fff;
+      box-shadow: 0px r(4px) r(30px) r(0px) rgba(0, 0, 0, 0.1);
+
+      .form-item {
+        padding: r(30px) 0;
+        border-bottom: 1px solid rgba(238, 238, 238, 1);
+        font-size: r(28px);
+        &:last-child {
+          border: none;
+        }
+      }
+      .name {
+        font-size: r(28px);
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+        margin-right: r(20px);
+      }
+      .cont {
+        flex: 1;
+        color: #999;
+        .text {
+          font-size: r(28px);
+        }
+        text-align: right;
+      }
+      .arrow-right {
+        width: r(22px);
+        height: r(40px);
+        background: url(https://nissanxk.aiitec.net/h5-nissan/static/picture/arrow_right@2x.png) center center / cover no-repeat;
+      }
+      input {
+        border: none;
+        font-size: r(28px);
+      }
+      input::placeholder {
+        font-size: r(28px);
+        color: #ddd;
+      }
+    }
+    .agreement {
+      padding: r(21px) r(80px);
+      // padding-left: r(140px);
+      font-size: r(24px);
+      color: rgba(102, 102, 102, 1);
+      .checkbox {
+        margin-right: r(17px);
+        width: r(28px);
+        height: r(28px);
+        background: url(https://nissanxk.aiitec.net/h5-nissan/static/picture/circle.png) center center / 100% 100% no-repeat;
+      }
+      .checked {
+        background: url(https://nissanxk.aiitec.net/h5-nissan/static/picture/tick.png) center center / 100% 100% no-repeat;
+      }
+    }
+    .desc {
+      padding: r(27px) r(40px);
+      font-size: r(28px);
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: r(42px);
+      .more {
+        color: #0082cd;
+      }
+    }
+
+    .post-btn {
+      display: block;
+      width: r(340px);
+      height: r(98px);
+      font-size: r(28px);
+      background: #0082cd;
+      border-radius: 49px;
+      color: #fff;
+      margin: r(0px) auto 0 auto;
+    }
+  }
+}
